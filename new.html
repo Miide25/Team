@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Platform Design Input Form</title>
+  <link rel="stylesheet" href="new.css">
+</head>
+<body>
+  <h1>Platform Design Feedback Form</h1>
+  <p>Fill in the form below, or scan the QR code to open this form on another device.</p>
+
+  <!-- User Form -->
+  <div class="form-container">
+    <form id="userForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="techNeeds">Current Technology Needs:</label>
+      <textarea id="techNeeds" name="techNeeds" rows="3" required></textarea>
+      
+      <label for="featureImportance">Features You Find Important:</label>
+      <textarea id="featureImportance" name="featureImportance" rows="3" required></textarea>
+      
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <!-- QR Code Display -->
+  <div id="qrCodeContainer">
+    <h2>Scan to Open This Form</h2>
+    <div id="qrCode"></div>
+  </div>
+
+  <script src="new.js"></script>
+</body>
+</html>
